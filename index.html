@@ -16,7 +16,6 @@
     <main>
       <form>
         <fieldset>
-          <legend>Shipping Information</legend>
           <div>
             <label for="name">Full Name:</label>
             <input
@@ -36,18 +35,18 @@
               required
             />
           </div>
+          <div>
+            <label for="form-message">Your message:</label>
+            <textarea
+              id="form-message"
+              name="message"
+              autofocus="on"
+              required
+              maxlength="200"
+              placeholder="How can I help you?"
+            ></textarea>
+          </div>
         </fieldset>
-        <div>
-          <label for="form-message">Your message:</label>
-          <textarea
-            id="form-message"
-            name="message"
-            autofocus="on"
-            required
-            maxlength="200"
-            placeholder="Your Message"
-          ></textarea>
-        </div>
         <button type="submit">Submit</button>
         <button type="reset">Reset</button>
       </form>
